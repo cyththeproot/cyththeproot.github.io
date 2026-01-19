@@ -1,12 +1,12 @@
 /* --- 1. Custom Properties (Variables) --- */
 :root {
 /* Color Palette */
---primary-color: #e74c3c; /* Main Accent Red */
---primary-hover: #c0392b; /* Darker Red */
---secondary-color: #34495e; /* Dark Blue/Gray for structure/footer */
---text-on-light: #333333; /* Dark text on white backgrounds */
---text-on-dark: #ecf0f1; /* Light text on dark backgrounds */
---background-section: #ffffff; /* Content background color */
+--primary-color: 	#a8ff00; /* Main Accent Green */
+--primary-hover: #e2ff3b; /* Lighter Green */
+--secondary-color: 	#bd1717; /* Dark Red for structure/footer */
+--text-on-light: #333333; /* Light text on Dark backgrounds */
+--text-on-dark: ; #ffd233;/* Light text on dark backgrounds */
+--background-section: #ffb525; /* Content background color */
 
 /* Layout Properties */
 --max-content-width: 1200px;
@@ -167,4 +167,5 @@ button:hover {
 background-color: var(--primary-hover);
 transform: translateY(-2px); /* Slight hover lift */
 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+
 }
