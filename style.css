@@ -22,7 +22,7 @@ body {
     height: 100%;
     z-index: -1;
     /* This is a high-quality tech wallpaper, you can swap the URL */
-    background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop');
+    background-image: url('https://raw.githubusercontent.com/gnrpgit/web/main/bg.png');
     background-size: cover;
     background-position: center;
     filter: brightness(0.4);
@@ -117,3 +117,4 @@ footer {
     opacity: 0.5;
     font-size: 0.8rem;
 }
+
