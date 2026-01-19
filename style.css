@@ -36,7 +36,7 @@ color: var(--text-on-dark); /* Default text color is light */
 
 /* --- CUSTOM BACKGROUND IMAGE & OVERLAY --- */
 background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-url('bg.jpg'); /* <<< CHECK FILENAME */
+url('bg.png'); /* <<< CHECK FILENAME */
 
 background-size: cover;
 background-attachment: fixed;
@@ -169,3 +169,4 @@ transform: translateY(-2px); /* Slight hover lift */
 box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 
 }
+
