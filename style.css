@@ -1,2 +1,177 @@
-*{box-sizing:border-box;margin:0;padding:0;}body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#ffffff;background-color:#181e22;min-height:100vh;display:flex;flex-direction:column;align-items:center;} .bg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background-image:url('bg.png');background-size:cover;background-position:center;background-attachment:fixed;filter:brightness(.4)contrast(1.1);} .container{width:90%;max-width:480px;padding:30px 0;display:flex;flex-direction:column;gap:20px;} header{background:#ea0101;color:#000000;padding:35px 20px;border-radius:24px;text-align:center;box-shadow:0 0 30px rgba(234,1,1,.5);} header h1{font-size:2.8rem;font-weight:900;letter-spacing:-1.5px;text-transform:lowercase;} .card{background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.15);padding:25px;border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.5);} h2{color:#ea0101;margin-bottom:12px;font-size:1.5rem;font-weight:700;} p{font-size:1.1rem;line-height:1.6;margin-bottom:10px;opacity:.95;} .links{display:flex;flex-direction:column;gap:12px;margin-top:15px;} a{background:#ffffff;color:#000000;text-decoration:none;padding:16px;border-radius:16px;text-align:center;font-weight:800;font-size:1rem;transition:.3s cubic-bezier(.175,.885,.32,1.275);} a:hover{background:#ea0101;transform:scale(1.03);box-shadow:0 0 20px rgba(234,1,1,.6);} a:active{transform:scale(.95);} .discord-presence{display:flex;align-items:center;gap:14px;padding:14px 18px;margin-top:18px;border-radius:18px;background:rgba(21,84,157,.18);border:1px solid rgba(234,1,1,.3);backdrop-filter:blur(10px);box-shadow:0 0 20px rgba(234,1,1,.25);} .status-dot{width:14px;height:14px;border-radius:50%;background:#747f8d;box-shadow:0 0 8px #747f8d;transition:background-color .3s ease,box-shadow .3s ease;} .discord-text{font-size:1.05rem;font-weight:800;color:#ea0101;} .audio-player{margin-top:20px;background:linear-gradient(135deg,#15549d,#ea0101);padding:16px;border-radius:12px;box-shadow:0 8px 20px rgba(234,1,1,.25);} .track-title{margin-bottom:8px;font-weight:bold;color:#ea0101;} audio{width:100%;} footer{text-align:center;margin-top:auto;padding:30px;opacity:.4;font-size:.8rem;}
-/* i did it single line for fun | by @jkbinf */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    background-color: #181e22;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    filter: brightness(.4) contrast(1.1);
+}
+
+header {
+    background: #ea0101;
+    color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 30px rgba(234, 1, 1, .5);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background: #ffffff;
+    color: #000000;
+    padding: 30px;
+    border-radius: 0;
+    border: 2px solid #ea0101;
+    box-shadow: none;
+}
+
+.welcome {
+    grid-column: 1 / 2;
+}
+
+.socials {
+    grid-column: 2 / 3;
+}
+
+.extras {
+    grid-column: 3 / 4;
+}
+
+h2 {
+    color: #ea0101;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+a {
+    background: #ea0101;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: .3s ease;
+    border: 2px solid #ea0101;
+}
+
+a:hover {
+    background: #ffffff;
+    color: #ea0101;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(234, 1, 1, .6);
+}
+
+a:active {
+    transform: translateY(0);
+}
+
+.discord-presence {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 0;
+    background: #15549d;
+    border: 2px solid #ea0101;
+    box-shadow: none;
+}
+
+.status-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #747f8d;
+    box-shadow: 0 0 10px #747f8d;
+    transition: background-color .3s ease, box-shadow .3s ease;
+}
+
+.discord-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.audio-player {
+    margin-top: 25px;
+    background: #ea0101;
+    padding: 20px;
+    border-radius: 0;
+    border: 2px solid #ffffff;
+    box-shadow: none;
+}
+
+.track-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+audio {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #ea0101;
+    color: #000000;
+    font-size: 1rem;
+    width: 100%;
+}
+/* Radical redesign by AI */
