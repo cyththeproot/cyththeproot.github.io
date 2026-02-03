@@ -1,2 +1,2 @@
 **CythWeb**
-made in 2025 just a socials page... WIP might be something with more page links and others!
+made in 2025 just a socials page... well it changed alot since then lol
